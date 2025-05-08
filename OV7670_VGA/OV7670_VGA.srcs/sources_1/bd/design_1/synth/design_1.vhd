@@ -1,8 +1,8 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Thu May  8 18:28:18 2025
---Host        : dvirhersh_comp running 64-bit major release  (build 9200)
+--Date        : Thu May  8 18:36:02 2025
+--Host        : Ido running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
 --Purpose     : IP block netlist
@@ -266,19 +266,6 @@ architecture STRUCTURE of design_1 is
     wr_en : out STD_LOGIC
   );
   end component design_1_ovo_7670_caputre_0_0;
-  component design_1_BILINEAR_INTERPOLATI_0_0 is
-  port (
-    clk_vga : in STD_LOGIC;
-    clk_in1 : in STD_LOGIC;
-    clk_interpolation : in STD_LOGIC;
-    pixel_in : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    bili_cntl : in STD_LOGIC;
-    write_enable : out STD_LOGIC;
-    pixel_out : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    address_write : out STD_LOGIC_VECTOR ( 18 downto 0 );
-    address_read : out STD_LOGIC_VECTOR ( 16 downto 0 )
-  );
-  end component design_1_BILINEAR_INTERPOLATI_0_0;
   component design_1_BRAM_MUX_0_0 is
   port (
     addr_in : in STD_LOGIC_VECTOR ( 18 downto 0 );
@@ -300,6 +287,19 @@ architecture STRUCTURE of design_1 is
     we_bram_small : out STD_LOGIC
   );
   end component design_1_BRAM_MUX_0_0;
+  component design_1_BILINEAR_INTERPOLATI_0_0 is
+  port (
+    clk_vga : in STD_LOGIC;
+    clk_in1 : in STD_LOGIC;
+    clk_interpolation : in STD_LOGIC;
+    pixel_in : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    bili_cntl : in STD_LOGIC;
+    write_enable : out STD_LOGIC;
+    pixel_out : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    address_write : out STD_LOGIC_VECTOR ( 18 downto 0 );
+    address_read : out STD_LOGIC_VECTOR ( 16 downto 0 )
+  );
+  end component design_1_BILINEAR_INTERPOLATI_0_0;
   signal BILINEAR_INTERPOLATI_0_address_read : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal BILINEAR_INTERPOLATI_0_address_write : STD_LOGIC_VECTOR ( 18 downto 0 );
   signal BILINEAR_INTERPOLATI_0_pixel_out : STD_LOGIC_VECTOR ( 11 downto 0 );

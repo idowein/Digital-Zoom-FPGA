@@ -22,8 +22,8 @@
       "ov7670_controller_0": "",
       "cntl_0": "",
       "ovo_7670_caputre_0": "",
-      "BILINEAR_INTERPOLATI_0": "",
-      "BRAM_MUX_0": ""
+      "BRAM_MUX_0": "",
+      "BILINEAR_INTERPOLATI_0": ""
     },
     "ports": {
       "clk_in1": {
@@ -843,94 +843,6 @@
           }
         }
       },
-      "BILINEAR_INTERPOLATI_0": {
-        "vlnv": "xilinx.com:module_ref:BILINEAR_INTERPOLATION_TOP:1.0",
-        "xci_name": "design_1_BILINEAR_INTERPOLATI_0_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "BILINEAR_INTERPOLATION_TOP",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk_vga": {
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_0_clk_out1",
-                "value_src": "ip_prop"
-              },
-              "FREQ_HZ": {
-                "value": "25000000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "clk_in1": {
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_0_clk_out1",
-                "value_src": "ip_prop"
-              },
-              "FREQ_HZ": {
-                "value": "50000000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "clk_interpolation": {
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_0_clk_out1",
-                "value_src": "ip_prop"
-              },
-              "FREQ_HZ": {
-                "value": "6250000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "pixel_in": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
-          },
-          "bili_cntl": {
-            "direction": "I"
-          },
-          "write_enable": {
-            "direction": "O"
-          },
-          "pixel_out": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
-          },
-          "address_write": {
-            "direction": "O",
-            "left": "18",
-            "right": "0"
-          },
-          "address_read": {
-            "direction": "O",
-            "left": "16",
-            "right": "0"
-          }
-        }
-      },
       "BRAM_MUX_0": {
         "vlnv": "xilinx.com:module_ref:BRAM_MUX:1.0",
         "xci_name": "design_1_BRAM_MUX_0_0",
@@ -1020,6 +932,94 @@
           },
           "we_bram_small": {
             "direction": "O"
+          }
+        }
+      },
+      "BILINEAR_INTERPOLATI_0": {
+        "vlnv": "xilinx.com:module_ref:BILINEAR_INTERPOLATION_TOP:1.0",
+        "xci_name": "design_1_BILINEAR_INTERPOLATI_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BILINEAR_INTERPOLATION_TOP",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_vga": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "25000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "clk_in1": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "clk_interpolation": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "6250000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "pixel_in": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "bili_cntl": {
+            "direction": "I"
+          },
+          "write_enable": {
+            "direction": "O"
+          },
+          "pixel_out": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "address_write": {
+            "direction": "O",
+            "left": "18",
+            "right": "0"
+          },
+          "address_read": {
+            "direction": "O",
+            "left": "16",
+            "right": "0"
           }
         }
       }
@@ -1236,8 +1236,8 @@
           "bili_cntl",
           "zoom_bram_address_suit/bili_cntl",
           "VGA_TOP_WITH_DATA_MUX/bili_cntl",
-          "BILINEAR_INTERPOLATI_0/bili_cntl",
-          "BRAM_MUX_0/bili_cntl"
+          "BRAM_MUX_0/bili_cntl",
+          "BILINEAR_INTERPOLATI_0/bili_cntl"
         ]
       },
       "clk_wiz_0_clk_interpolation": {
@@ -1273,8 +1273,8 @@
       "clk_wiz_0_clk_bili_wr": {
         "ports": [
           "clk_wiz_0/clk_bili_wr",
-          "BILINEAR_INTERPOLATI_0/clk_in1",
-          "BRAM_MUX_0/clk_50_MHz"
+          "BRAM_MUX_0/clk_50_MHz",
+          "BILINEAR_INTERPOLATI_0/clk_in1"
         ]
       },
       "clk_in1_1": {
